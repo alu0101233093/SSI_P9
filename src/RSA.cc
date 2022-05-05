@@ -30,10 +30,10 @@ RSA::euclidean_extendido(int a, int b){
     return 0;
 }
 
-int 
+long 
 RSA::exponenciacionRapida(int a, int b, int m){   // a = base, b = exp, m = mod
-    int x = 1;
-    int y = a % m;
+    long x = 1;
+    long y = a % m;
     while (b > 0 && y > 1){
         if (b%2 != 0){
             x = (x*y) % m;

@@ -17,7 +17,7 @@ class RSA {
         int e;
         int n;
 
-        int exponenciacionRapida(int base, int exponente, int modulo); 
+        long exponenciacionRapida(int base, int exponente, int modulo); 
         int codificacion(int, std::string); 
         int euclidean_extendido(int, int); 
         bool lehman_peralta(int primo); 
